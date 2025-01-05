@@ -1,0 +1,245 @@
+{'callbacks': {'early_stopping': None,
+               'lr_scheduler': {'kwargs': {'gamma': 0.9, 'step_size': 10},
+                                'name': 'StepLR',
+                                'step': None},
+               'model_checkpoint': {'k': 3,
+                                    'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                    'minimize': False,
+                                    'save_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/ckpts/20250104-200341'},
+               'model_checkpoint_edge': {'k': 3,
+                                         'metric_name': 'valEpoch/avg_edge_index_bg_mcc',
+                                         'minimize': False,
+                                         'save_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/ckpts/edge/20250104-200341'}},
+ 'dataset': {'ab': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': None,
+                                                    'script_path': None},
+                    'embedding_model': 'esm2'},
+             'ag': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': None,
+                                                    'script_path': None},
+                    'embedding_model': 'esm2'},
+             'name': 'asep',
+             'node_feat_type': 'pre_cal',
+             'root': '~/Documents/GSU/Projects/Antibody-Design/epitope-prediction/data',
+             'split_idx': None,
+             'split_method': None},
+ 'hparams': {'act_list': [None],
+             'batch_size': 32,
+             'decoder': {'name': 'inner_prod'},
+             'dim_list': [128, 64],
+             'edge_cutoff': 0.5,
+             'input_ab_act': 'relu',
+             'input_ab_dim': 512,
+             'input_ag_act': 'relu',
+             'input_ag_dim': 480,
+             'max_epochs': 10,
+             'model_type': 'graph',
+             'num_edge_cutoff': 3,
+             'pos_weight': 100,
+             'test_batch_size': 32,
+             'train_batch_size': 32,
+             'val_batch_size': 32},
+ 'keep_interim_ckpts': True,
+ 'logging_method': 'wandb',
+ 'loss': {'edge_index_bg_rec_loss': {'kwargs': {'reduction': 'mean',
+                                                'weight_tensor': 100},
+                                     'name': 'edge_index_bg_rec_loss',
+                                     'w': 1.0},
+          'edge_index_bg_sum_loss': {'kwargs': {'thr': 40},
+                                     'name': 'edge_index_bg_sum_loss',
+                                     'w': 0.0003942821556421417}},
+ 'mode': 'train',
+ 'num_threads': 4,
+ 'optimizer': {'name': 'Adam', 'params': {'lr': 0.001, 'weight_decay': 0.0}},
+ 'seed': 2175555180,
+ 'try_gpu': True,
+ 'wandb_init': {'entity': 'mansoorbaloch931-georgia-state-university',
+                'group': 'train',
+                'job_type': 'train',
+                'notes': 'pre_cal',
+                'project': 'retrain-walle',
+                'tags': 'pre_cal'},
+ 'work_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode'}
+wandb run info:
+- name: proud-sun-5
+- project: retrain-walle
+- entity: mansoorbaloch931-georgia-state-university
+[32m2025-01-04 20:03:42.942[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m116[0m - [1mfinal config:
+{'callbacks': {'early_stopping': None,
+               'lr_scheduler': {'kwargs': {'gamma': 0.9, 'step_size': 10},
+                                'name': 'StepLR',
+                                'step': None},
+               'model_checkpoint': {'k': 3,
+                                    'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                    'minimize': False,
+                                    'save_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/ckpts/20250104-200341/20250104-200342'},
+               'model_checkpoint_edge': {'k': 3,
+                                         'metric_name': 'valEpoch/avg_edge_index_bg_mcc',
+                                         'minimize': False,
+                                         'save_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/ckpts/edge/20250104-200341/20250104-200342'}},
+ 'dataset': {'ab': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': None,
+                                                    'script_path': None},
+                    'embedding_model': 'esm2'},
+             'ag': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': None,
+                                                    'script_path': None},
+                    'embedding_model': 'esm2'},
+             'name': 'asep',
+             'node_feat_type': 'pre_cal',
+             'root': '~/Documents/GSU/Projects/Antibody-Design/epitope-prediction/data',
+             'split_idx': None,
+             'split_method': None},
+ 'hparams': {'act_list': [None],
+             'batch_size': 32,
+             'decoder': {'name': 'inner_prod'},
+             'dim_list': [128, 64],
+             'edge_cutoff': 0.5,
+             'input_ab_act': 'relu',
+             'input_ab_dim': 512,
+             'input_ag_act': 'relu',
+             'input_ag_dim': 480,
+             'max_epochs': 10,
+             'model_type': 'graph',
+             'num_edge_cutoff': 3,
+             'pos_weight': 100,
+             'test_batch_size': 32,
+             'train_batch_size': 32,
+             'val_batch_size': 32},
+ 'keep_interim_ckpts': True,
+ 'logging_method': 'wandb',
+ 'loss': {'edge_index_bg_rec_loss': {'kwargs': {'reduction': 'mean',
+                                                'weight_tensor': 100},
+                                     'name': 'edge_index_bg_rec_loss',
+                                     'w': 1.0},
+          'edge_index_bg_sum_loss': {'kwargs': {'thr': 40},
+                                     'name': 'edge_index_bg_sum_loss',
+                                     'w': 0.0003942821556421417}},
+ 'mode': 'train',
+ 'num_threads': 4,
+ 'optimizer': {'name': 'Adam', 'params': {'lr': 0.001, 'weight_decay': 0.0}},
+ 'seed': 2175555180,
+ 'try_gpu': True,
+ 'wandb_init': {'entity': 'mansoorbaloch931-georgia-state-university',
+                'group': 'train',
+                'job_type': 'train',
+                'notes': 'pre_cal',
+                'project': 'retrain-walle',
+                'tags': 'pre_cal'},
+ 'work_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode'}[0m
+[32m2025-01-04 20:03:42.943[0m | [34m[1mDEBUG   [0m | [36masep.train_model[0m:[36mtrain_model[0m:[36m408[0m - [34m[1mconfig:
+{'callbacks': {'early_stopping': None,
+               'lr_scheduler': {'kwargs': {'gamma': 0.9, 'step_size': 10},
+                                'name': 'StepLR',
+                                'step': None},
+               'model_checkpoint': {'k': 3,
+                                    'metric_name': 'valEpoch/avg_epi_node_mcc',
+                                    'minimize': False,
+                                    'save_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/ckpts/20250104-200341/20250104-200342'},
+               'model_checkpoint_edge': {'k': 3,
+                                         'metric_name': 'valEpoch/avg_edge_index_bg_mcc',
+                                         'minimize': False,
+                                         'save_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/ckpts/edge/20250104-200341/20250104-200342'}},
+ 'dataset': {'ab': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': None,
+                                                    'script_path': None},
+                    'embedding_model': 'esm2'},
+             'ag': {'custom_embedding_method': None,
+                    'custom_embedding_method_src': {'method_name': None,
+                                                    'script_path': None},
+                    'embedding_model': 'esm2'},
+             'name': 'asep',
+             'node_feat_type': 'pre_cal',
+             'root': '~/Documents/GSU/Projects/Antibody-Design/epitope-prediction/data',
+             'split_idx': None,
+             'split_method': None},
+ 'hparams': {'act_list': [None],
+             'batch_size': 32,
+             'decoder': {'name': 'inner_prod'},
+             'dim_list': [128, 64],
+             'edge_cutoff': 0.5,
+             'input_ab_act': 'relu',
+             'input_ab_dim': 512,
+             'input_ag_act': 'relu',
+             'input_ag_dim': 480,
+             'max_epochs': 10,
+             'model_type': 'graph',
+             'num_edge_cutoff': 3,
+             'pos_weight': 100,
+             'test_batch_size': 32,
+             'train_batch_size': 32,
+             'val_batch_size': 32},
+ 'keep_interim_ckpts': True,
+ 'logging_method': 'wandb',
+ 'loss': {'edge_index_bg_rec_loss': {'kwargs': {'reduction': 'mean',
+                                                'weight_tensor': 100},
+                                     'name': 'edge_index_bg_rec_loss',
+                                     'w': 1.0},
+          'edge_index_bg_sum_loss': {'kwargs': {'thr': 40},
+                                     'name': 'edge_index_bg_sum_loss',
+                                     'w': 0.0003942821556421417}},
+ 'mode': 'train',
+ 'num_threads': 4,
+ 'optimizer': {'name': 'Adam', 'params': {'lr': 0.001, 'weight_decay': 0.0}},
+ 'seed': 2175555180,
+ 'try_gpu': True,
+ 'wandb_init': {'entity': 'mansoorbaloch931-georgia-state-university',
+                'group': 'train',
+                'job_type': 'train',
+                'notes': 'pre_cal',
+                'project': 'retrain-walle',
+                'tags': 'pre_cal'},
+ 'work_dir': '/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode'}[0m
+Processing...
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1723/1723 [00:03<00:00, 465.11graph_pair/s]
+Done!
+len(train_loader.dataset)=1383
+len(val_loader.dataset)=170
+len(test_loader.dataset)=170
+PyGAbAgIntGAE(
+  (B_encoder_block): Sequential(
+    (0) - Linear(in_features=512, out_features=128, bias=True): x_b -> x_b_1
+    (1) - ReLU(inplace=True): x_b_1 -> x_b_1
+    (2) - Linear(in_features=128, out_features=64, bias=True): x_b_1 -> x_b_2
+    (3) - Identity(): x_b_2 -> x_b_2
+  )
+  (G_encoder_block): Sequential(
+    (0) - Linear(in_features=480, out_features=128, bias=True): x_g -> x_g_1
+    (1) - ReLU(inplace=True): x_g_1 -> x_g_1
+    (2) - Linear(in_features=128, out_features=64, bias=True): x_g_1 -> x_g_2
+    (3) - Identity(): x_g_2 -> x_g_2
+  )
+)
+Epoch 1/10
+train:   0%|                                                     | 0/44 [00:00<?, ?GraphPairBatch/s]
+Error executing job with overrides: ['mode=train', 'wandb_init.project=retrain-walle', "wandb_init.notes='pre_cal'", "wandb_init.tags='pre_cal'", 'hparams.max_epochs=10', 'hparams.pos_weight=100', 'hparams.train_batch_size=32', 'hparams.val_batch_size=32', 'hparams.test_batch_size=32', 'dataset.node_feat_type=pre_cal', 'dataset.ab.embedding_model=esm2', 'dataset.ag.embedding_model=esm2', 'callbacks.early_stopping=null']
+Traceback (most recent call last):
+  File "/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/train.py", line 117, in main
+    train_model(
+  File "/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/asep/train_model.py", line 502, in train_model
+    feed_forward_step(
+  File "/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/asep/train_model.py", line 287, in feed_forward_step
+    batch_result = model(batch)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/asep/model/asepv1_model.py", line 355, in forward
+    z_ab, z_ag = self.encode(batch)  # (Nb, C), (Ng, C)
+  File "/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/asep/model/asepv1_model.py", line 227, in encode
+    B_z = self.B_encoder_block(batch.x_b, batch.edge_index_b)  # (Nb, C)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch_geometric/nn/sequential.py", line 229, in forward
+    outs = getattr(self, child.name)(*args)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mansoor/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1914x480 and 512x128)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

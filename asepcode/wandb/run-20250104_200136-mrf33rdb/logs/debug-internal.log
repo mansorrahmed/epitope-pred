@@ -1,0 +1,16 @@
+{"time":"2025-01-04T20:01:36.130905-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-04T20:01:36.13094-05:00","level":"INFO","msg":"created symlink","path":"/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/wandb/run-20250104_200136-mrf33rdb/logs/debug-core.log"}
+{"time":"2025-01-04T20:01:36.242739-05:00","level":"INFO","msg":"created new stream","id":"mrf33rdb"}
+{"time":"2025-01-04T20:01:36.242783-05:00","level":"INFO","msg":"stream: started","id":"mrf33rdb"}
+{"time":"2025-01-04T20:01:36.242857-05:00","level":"INFO","msg":"handler: started","stream_id":"mrf33rdb"}
+{"time":"2025-01-04T20:01:36.243015-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"mrf33rdb"}
+{"time":"2025-01-04T20:01:36.243017-05:00","level":"INFO","msg":"sender: started","stream_id":"mrf33rdb"}
+{"time":"2025-01-04T20:01:36.509897-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T20:01:54.565646-05:00","level":"INFO","msg":"stream: closing","id":"mrf33rdb"}
+{"time":"2025-01-04T20:01:54.565687-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T20:01:54.567318-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T20:02:25.732794-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T20:02:25.851955-05:00","level":"INFO","msg":"handler: closed","stream_id":"mrf33rdb"}
+{"time":"2025-01-04T20:02:25.852018-05:00","level":"INFO","msg":"sender: closed","stream_id":"mrf33rdb"}
+{"time":"2025-01-04T20:02:25.852-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mrf33rdb"}
+{"time":"2025-01-04T20:02:25.852381-05:00","level":"INFO","msg":"stream: closed","id":"mrf33rdb"}

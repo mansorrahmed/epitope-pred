@@ -1,0 +1,11 @@
+- mode=dev
+- wandb_init.project=retrain-walle-dev
+- wandb_init.notes='pre_cal'
+- hparams.max_epochs=5
+- hparams.pos_weight=100
+- hparams.train_batch_size=128
+- hparams.val_batch_size=32
+- hparams.test_batch_size=32
+- dataset.node_feat_type=pre_cal
+- dataset.ab.embedding_model=igfold
+- dataset.ag.embedding_model=esm2

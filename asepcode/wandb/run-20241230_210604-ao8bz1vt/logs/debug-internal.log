@@ -1,0 +1,16 @@
+{"time":"2024-12-30T21:06:04.994375-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-30T21:06:04.994402-05:00","level":"INFO","msg":"created symlink","path":"/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/asepcode/wandb/run-20241230_210604-ao8bz1vt/logs/debug-core.log"}
+{"time":"2024-12-30T21:06:05.100474-05:00","level":"INFO","msg":"created new stream","id":"ao8bz1vt"}
+{"time":"2024-12-30T21:06:05.100503-05:00","level":"INFO","msg":"stream: started","id":"ao8bz1vt"}
+{"time":"2024-12-30T21:06:05.100525-05:00","level":"INFO","msg":"handler: started","stream_id":"ao8bz1vt"}
+{"time":"2024-12-30T21:06:05.100555-05:00","level":"INFO","msg":"sender: started","stream_id":"ao8bz1vt"}
+{"time":"2024-12-30T21:06:05.100536-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"ao8bz1vt"}
+{"time":"2024-12-30T21:06:05.227318-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-30T21:13:16.897298-05:00","level":"INFO","msg":"stream: closing","id":"ao8bz1vt"}
+{"time":"2024-12-30T21:13:16.897474-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-30T21:13:16.898278-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-30T21:13:17.844026-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-30T21:13:17.972995-05:00","level":"INFO","msg":"handler: closed","stream_id":"ao8bz1vt"}
+{"time":"2024-12-30T21:13:17.973061-05:00","level":"INFO","msg":"sender: closed","stream_id":"ao8bz1vt"}
+{"time":"2024-12-30T21:13:17.973048-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ao8bz1vt"}
+{"time":"2024-12-30T21:13:17.973404-05:00","level":"INFO","msg":"stream: closed","id":"ao8bz1vt"}

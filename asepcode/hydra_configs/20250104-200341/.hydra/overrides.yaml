@@ -1,0 +1,13 @@
+- mode=train
+- wandb_init.project=retrain-walle
+- wandb_init.notes='pre_cal'
+- wandb_init.tags='pre_cal'
+- hparams.max_epochs=10
+- hparams.pos_weight=100
+- hparams.train_batch_size=32
+- hparams.val_batch_size=32
+- hparams.test_batch_size=32
+- dataset.node_feat_type=pre_cal
+- dataset.ab.embedding_model=esm2
+- dataset.ag.embedding_model=esm2
+- callbacks.early_stopping=null

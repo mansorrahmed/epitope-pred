@@ -1,0 +1,17 @@
+{"time":"2024-12-30T12:32:14.416539-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-30T12:32:14.416571-05:00","level":"INFO","msg":"created symlink","path":"/Users/mansoor/Documents/GSU/Projects/Antibody-Design/epitope-prediction/epitope-pred/wandb/run-20241230_123214-n4wlodnk/logs/debug-core.log"}
+{"time":"2024-12-30T12:32:14.729505-05:00","level":"INFO","msg":"created new stream","id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:14.729543-05:00","level":"INFO","msg":"stream: started","id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:14.729627-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:14.729648-05:00","level":"INFO","msg":"handler: started","stream_id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:14.729636-05:00","level":"INFO","msg":"sender: started","stream_id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:14.86017-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-30T12:32:15.162304-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-30T12:32:15.162689-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-30T12:32:15.545927-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-30T12:32:15.637338-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-30T12:32:16.64897-05:00","level":"INFO","msg":"stream: closing","id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:16.648984-05:00","level":"INFO","msg":"handler: closed","stream_id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:16.648993-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:16.649057-05:00","level":"INFO","msg":"sender: closed","stream_id":"n4wlodnk"}
+{"time":"2024-12-30T12:32:16.649085-05:00","level":"INFO","msg":"stream: closed","id":"n4wlodnk"}
